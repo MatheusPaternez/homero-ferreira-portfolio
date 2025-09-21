@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+
+<body class="home-body">
+
+    <header class="main-header">
+        <nav class="main-nav container" aria-label="Header Navigation">
+            <h1 class="logo">Homero Ferreira</h1>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Music</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="homero" id="home">
+            <div class="homero-content">
+                <h2>The Heart of the Music</h2>
+                <p>A collection of timeless melodies and heartfelt performances from Homero Ferreira.</p>
+                <a href="#music" class="cta-button">Listen to His Work</a>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="./assets/img/homero-home.webp" alt="Grandpa playing music">
+                    </div>
+                    <div class="about-text">
+                        <h2>About Homero</h2>
+                        <p>
+                            Homero found his deep passion for music later in life, proving it's never too late to begin
+                            a new journey.
+                            He has dedicated countless hours to mastering his craft, bringing joy and solace through his
+                            melodies.<br>
+                            While not a professional, his talent and dedication shine through every note.
+                            This portfolio is a tribute to his artistry and a window into his musical soul.
+                        </p>
+                        <p>
+                            From classical inspirations to romantic songs and original compositions, his repertoire is
+                            as
+                            diverse as his life experiences.
+                            <br>
+                            He believes that music is a universal language and, through his performances, he seeks to
+                            touch
+                            hearts and inspire minds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <h2>A Glimpse of His Journey</h2>
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                        <img src="./assets/img/homero-keyboard.webp" alt="Grandpa performing live">
+                        <p class="image-caption">Writing his projects at the Keyboard.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./assets/img/homero-keyboard-2.webp" alt="Grandpa in a recording studio">
+                        <p class="image-caption">Practicing on his Keyboard.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./assets/img/homero-home.webp" alt="Close up of grandpa's hands on instrument">
+                        <p class="image-caption">The magic in his hands.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./assets/img/homero-saxofone.webp" alt="Young grandpa with an instrument">
+                        <p class="image-caption">From early days to now, music has been a constant.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-section" id="music">
+            <div class="container">
+                <h2>Listen to His Music</h2>
+                <div class="music-list">
+                    <div class="track">
+                        <h3>I Didn't Lose</h3>
+                        <p>A music about love and time.</p>
+                        <audio controls>
+                            <source src="./assets/musics/I Didnt Lose.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="track">
+                        <h3>Saudade, que Saudade</h3>
+                        <p>A music about missing someone you love.</p>
+                        <audio controls>
+                            <source src="./assets/musics/Saudade Que Saudade.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="track">
+                        <h3>Água com Açúcar e Limão</h3>
+                        <p>A delicate and reflective melody, perfect for quiet evenings.</p>
+                        <audio controls>
+                            <source src="./assets/musics/Agua Com Acucar e Limao.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>
+                    If you'd like to reach out, share a thought, or simply connect,
+                    please feel free to send an email. Your messages are always appreciated!
+                </p>
+                <a href="mailto:yourgrandpasemail@example.com" class="cta-button contact-button">Contact Page</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Homero Ferreira's Melodies. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a> |
+                <a href="https://www.youtube.com/channel/UCglCAt9z_ihq4lq-5oUJS0w" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
