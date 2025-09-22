@@ -4,10 +4,10 @@
     padding: 0;
 }
 
-.home-body {
+body {
     font-family: 'Poppins';
     line-height: 1.6;
-    color: #333;
+    color: #333;    
     background-color: #f8f8f8;
 }
 
@@ -43,11 +43,7 @@ h2::after {
 /* Header */
 
 .main-header {
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     position: sticky;
-    top: 0;
     z-index: 1000;
 }
 
@@ -68,17 +64,14 @@ h2::after {
 .main-nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1.8rem;
 }
 
-.main-nav a {
+.nav-a{
     text-decoration: none;
     color: #555;
-    font-weight: 500;
-    transition: color 0.3s, border-bottom 0.3s;
-    padding-bottom: 5px;
 }
 
 .main-nav a:hover {
@@ -192,7 +185,7 @@ h2::after {
 }
 
 .gallery-item:hover {
-    transform: translateY(-5px);
+    border: white 1px solid;
 }
 
 .gallery-item img {
@@ -311,6 +304,114 @@ h2::after {
     color: #e74c3c;
 }
 
+/* CONTACT PAGE */
+
+/* Header */
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.nav-a{
+    text-decoration: none;
+    color: #555;
+}
+
+#contact-logo-a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#contact-logo-a:hover{
+    border-bottom: 2px solid #333;
+}
+
+/* Main */
+
+/* Contact Title */
+
+.contact-title{
+    background-color: #dbe9f7;
+    margin: 0;
+    padding: 30px;
+}
+
+.contact-h2{
+    color: black;
+}
+
+.contact-p{
+    text-align: center;
+}
+
+/* Contact Form */
+
+form {
+    max-width: 97%;
+    text-wrap: nowrap;
+    margin: 2em auto;
+    padding: 2em;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #333;
+}
+
+form div {
+    margin-bottom: 1.2em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
 /* Media Queries for Tablets and Desktops */
 
 /* Tablet (medium screens) */
@@ -366,6 +467,10 @@ h2::after {
 
     .track {
         text-align: left;
+    }
+
+    form{
+        max-width: 50%;
     }
 }
 
