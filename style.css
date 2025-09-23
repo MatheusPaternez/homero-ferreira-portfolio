@@ -412,6 +412,25 @@ form button:hover {
     background: #0056b3;
 }
 
+/* About Page */
+
+.text-and-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.text-and-img img{
+    width: 80%;
+    border-radius: 60px;
+}
+
+.large-screen-h2-about{
+    display: none;
+}
+
 /* Media Queries for Tablets and Desktops */
 
 /* Tablet (medium screens) */
@@ -508,5 +527,19 @@ form button:hover {
 
     .music-list {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* About Page */
+
+    .mobile-h2-about{
+        display: none;
+    }
+
+    .large-screen-h2-about{
+        display: block;
+    }
+
+    .text-and-img{
+        display: flex;
     }
 }
