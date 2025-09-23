@@ -541,5 +541,20 @@ form button:hover {
 
     .text-and-img{
         display: flex;
+        flex-direction: row;
+    }
+
+    .text-and-img img{
+        padding-left: 20px;
+        width: 30%;
+    }
+
+    .text-and-img h2{
+        padding-left: 20px;
+    }
+
+    .text-about{
+        padding: 50px;
+        font-size: 20px;
     }
 }
