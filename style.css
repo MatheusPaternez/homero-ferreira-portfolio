@@ -444,44 +444,61 @@ form button:hover {
 /* Gallery Page */
 
 .gallery-title-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-  background-color: #f8f8f8;
-  overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #f8f8f8;
+    overflow: hidden;
 }
 
 .gallery-title {
-  font-size: 3.5em;
-  color: #333;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  letter-spacing: 2px;  
-  
-  animation: sutil-bright 2s ease-out forwards;
-  opacity: 0;
-  transform: translateY(20px);
+    font-size: 3.5em;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+
+    animation: sutil-bright 2s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 @keyframes sutil-bright {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-    letter-spacing: 5px;
-    filter: blur(5px);
-  }
-  50% {
-    opacity: 0.7;
-    transform: translateY(0);
-    letter-spacing: 1px;
-    filter: blur(2px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-    letter-spacing: 2px;
-    filter: blur(0);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        letter-spacing: 5px;
+        filter: blur(5px);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: translateY(0);
+        letter-spacing: 1px;
+        filter: blur(2px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        letter-spacing: 2px;
+        filter: blur(0);
+    }
+}
+
+/* 404 PAGE */
+
+.text-404 {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--red-color);
+}
+
+.footer-404 {
+    margin-top: 60%;
 }
 
 /* Media Queries for Tablets and Desktops */
@@ -609,5 +626,11 @@ form button:hover {
     .text-about {
         padding: 50px;
         font-size: 20px;
+    }
+
+    /* 404 PAGE */
+
+    .footer-404 {
+        margin-top: 35%;
     }
 }
