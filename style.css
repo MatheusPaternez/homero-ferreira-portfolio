@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-:root{
+:root {
     --gray-color: #333;
     --red-color: #e74c3c;
 }
@@ -12,7 +12,7 @@
 body {
     font-family: 'Poppins';
     line-height: 1.6;
-    color: var(--gray-color);    
+    color: var(--gray-color);
     background-color: #f8f8f8;
 }
 
@@ -74,7 +74,7 @@ h2::after {
     gap: 1.8rem;
 }
 
-.nav-a{
+.nav-a {
     text-decoration: none;
     color: #555;
 }
@@ -87,7 +87,7 @@ h2::after {
 /* Homero Section */
 
 .homero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./assets/img/homero-sandra.webp') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/img/homero-sandra.webp') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 8rem 1rem;
@@ -147,7 +147,7 @@ h2::after {
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid var(--red-color);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .about-image img {
@@ -185,7 +185,7 @@ h2::after {
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
 }
 
@@ -320,12 +320,12 @@ h2::after {
     margin-bottom: 1rem;
 }
 
-.nav-a{
+.nav-a {
     text-decoration: none;
     color: #555;
 }
 
-#contact-logo-a{
+#contact-logo-a {
     text-decoration: none;
     color: var(--gray-color);
     font-size: 1.8rem;
@@ -333,7 +333,7 @@ h2::after {
     margin-bottom: 1rem;
 }
 
-#contact-logo-a:hover{
+#contact-logo-a:hover {
     border-bottom: 2px solid var(--gray-color);
 }
 
@@ -341,17 +341,17 @@ h2::after {
 
 /* Contact Title */
 
-.contact-title{
+.contact-title {
     background-color: #dbe9f7;
     margin: 0;
     padding: 30px;
 }
 
-.contact-h2{
+.contact-h2 {
     color: black;
 }
 
-.contact-p{
+.contact-p {
     text-align: center;
 }
 
@@ -419,7 +419,7 @@ form button:hover {
 
 /* About Page */
 
-.text-and-img{
+.text-and-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -427,19 +427,62 @@ form button:hover {
     padding-top: 20px;
 }
 
-.text-and-img img{
+.text-and-img img {
     width: 80%;
     border-radius: 60px;
 }
 
-.large-screen-h2-about{
+.large-screen-h2-about {
     display: none;
 }
 
-.text-about{
-        padding: 50px;
-        font-size: 16px;
-    }
+.text-about {
+    padding: 50px;
+    font-size: 16px;
+}
+
+/* Gallery Page */
+
+.gallery-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.gallery-title {
+  font-size: 3.5em;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;  
+  
+  animation: sutil-bright 2s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes sutil-bright {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    letter-spacing: 5px;
+    filter: blur(5px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(0);
+    letter-spacing: 1px;
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: 2px;
+    filter: blur(0);
+  }
+}
 
 /* Media Queries for Tablets and Desktops */
 
@@ -498,7 +541,7 @@ form button:hover {
         text-align: left;
     }
 
-    form{
+    form {
         max-width: 50%;
     }
 }
@@ -541,29 +584,29 @@ form button:hover {
 
     /* About Page */
 
-    .mobile-h2-about{
+    .mobile-h2-about {
         display: none;
     }
 
-    .large-screen-h2-about{
+    .large-screen-h2-about {
         display: block;
     }
 
-    .text-and-img{
+    .text-and-img {
         display: flex;
         flex-direction: row;
     }
 
-    .text-and-img img{
+    .text-and-img img {
         padding-left: 20px;
         width: 30%;
     }
 
-    .text-and-img h2{
+    .text-and-img h2 {
         padding-left: 20px;
     }
 
-    .text-about{
+    .text-about {
         padding: 50px;
         font-size: 20px;
     }
