@@ -249,7 +249,7 @@ h2::after {
     border-radius: 5px;
 }
 
-.play-button{
+.play-button {
     margin-top: 2%;
     border: none;
     border-radius: 8px;
@@ -257,6 +257,94 @@ h2::after {
     background-color: #f8f8f8;
     cursor: pointer;
     padding: 10px 0;
+}
+
+/* FAQ Accordion Section */
+
+/* Estilos para o container e o título */
+
+#FAQ-Accordion {
+    display: flex;
+    justify-content: center;
+}
+
+.accordion-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2.faq-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.accordion input {
+    display: none;
+}
+
+.accordion label {
+    display: block;
+    padding: 18px 25px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #333;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.accordion label:hover {
+    background-color: #f9f9f9;
+}
+
+.accordion label::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: #e74c3c;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.accordion input:checked+label::after {
+    content: '-';
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.accordion .content {
+    padding: 0 25px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    background-color: #fdfdfd;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.accordion input:checked~.content {
+    max-height: 300px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.accordion .content p {
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.accordion-item:last-child label {
+    border-bottom: none;
 }
 
 /* Contact Section */
@@ -571,6 +659,12 @@ form button:hover {
     form {
         max-width: 50%;
     }
+
+    /* 404 Page */
+
+    .footer-404 {
+        margin-top: 70%;
+    }
 }
 
 /* Desktop (large screens) */
@@ -641,6 +735,6 @@ form button:hover {
     /* 404 PAGE */
 
     .footer-404 {
-        margin-top: 35%;
+        margin-top: 26%;
     }
 }
