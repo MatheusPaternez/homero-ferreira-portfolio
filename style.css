@@ -596,6 +596,12 @@ form button:hover {
     margin-top: 60%;
 }
 
+/* Music Page */
+
+.music-p{
+    padding: 20px;
+}
+
 /* Media Queries for Tablets and Desktops */
 
 /* Tablet (medium screens) */
