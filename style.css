@@ -379,6 +379,15 @@ h2.faq-title {
     border-color: #c0392b;
 }
 
+.contact-img {
+    border-radius: 20px;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px
+}
+
 /* Footer */
 
 .main-footer {
@@ -536,6 +545,19 @@ form button:hover {
     font-size: 16px;
 }
 
+header.about-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f8f8f8;
+}
+
+.about-body {
+    margin-top: 100px;
+}
+
 /* Gallery Page */
 
 .gallery-title-container {
@@ -593,13 +615,13 @@ form button:hover {
     color: var(--red-color);
 }
 
-.footer-404 {
+footer.footer-404 {
     margin-top: 60%;
 }
 
 /* Music Page */
 
-.music-p{
+.music-p {
     padding: 20px;
 }
 
@@ -707,6 +729,12 @@ form button:hover {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* Contact Page */
+
+    .contact-img {
+        width: 50%;
+    }
+
     /* About Page */
 
     .mobile-h2-about {
@@ -744,7 +772,7 @@ form button:hover {
 
     /* Music Page */
 
-    .music-p{
+    .music-p {
         padding: 60px;
         font-size: 20px;
     }
