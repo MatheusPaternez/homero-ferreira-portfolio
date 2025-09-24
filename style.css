@@ -249,6 +249,16 @@ h2::after {
     border-radius: 5px;
 }
 
+.play-button{
+    margin-top: 2%;
+    border: none;
+    border-radius: 8px;
+    color: var(--gray-color);
+    background-color: #f8f8f8;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
 /* Contact Section */
 
 .contact-section {
