@@ -261,8 +261,6 @@ h2::after {
 
 /* FAQ Accordion Section */
 
-/* Estilos para o container e o título */
-
 #FAQ-Accordion {
     display: flex;
     justify-content: center;
@@ -325,7 +323,6 @@ h2.faq-title {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.3s ease-out;
-    background-color: #fdfdfd;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -736,5 +733,12 @@ form button:hover {
 
     .footer-404 {
         margin-top: 26%;
+    }
+
+    /* Music Page */
+
+    .music-p{
+        padding: 60px;
+        font-size: 20px;
     }
 }
